@@ -41,6 +41,7 @@ public class ReciteActivity extends AppCompatActivity {
           if(msg.what==1){
               String data = (String)msg.obj;
               meaning = pareJson(data);
+              tv.setText(meaning);
               Log.d("you", "handleMessage: "+meaning);
           }
       }
@@ -68,7 +69,7 @@ public class ReciteActivity extends AppCompatActivity {
             "exceed",
             "circuit",
             "aviation",
-            "temperate",
+            "temperate"
     };
 
     @Override
@@ -105,9 +106,10 @@ public class ReciteActivity extends AppCompatActivity {
                         mHandler.sendMessage(msg);
                     }
                 }).start();
-                Intent intent = new Intent(ReciteActivity.this,ReciteFailActivity.class);
-                intent.putExtra("word",meaning);
-                startActivity(intent);
+//                Intent intent = new Intent(ReciteActivity.this,ReciteFailActivity.class);
+//                intent.putExtra("word",meaning);
+//                startActivity(intent);
+
 
             }
         });
