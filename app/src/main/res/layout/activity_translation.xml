@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/enChangeToZh"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:dropDownWidth="100dp"
+            android:entries="@array/translation"
+            android:scrollbarSize="50dp"
+            android:spinnerMode="dropdown" />
+
+        <EditText
+            android:id="@+id/et_translation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/translation"
+            android:hint="需要翻译的词"
+            android:padding="10dp" />
+
+
+        <TextView
+            android:id="@+id/tv_translation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/translation"
+            android:padding="10dp"
+            android:textSize="25sp" />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/trButton"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:text="翻译" />
+
+
+    </LinearLayout>
+</ScrollView>

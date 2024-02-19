@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--    https://cdn.jsdelivr.net/gh/lyc8503/baicizhan-word-meaning-API/data/list.json-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:layout_marginTop="100dp">
+        <TextView
+            android:id="@+id/tv_recite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_1"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_recite"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="50dp"
+        android:text="开始"
+        android:textSize="35sp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt2_recite"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="不认识"
+        android:textSize="35sp"/>
+
+
+</LinearLayout>

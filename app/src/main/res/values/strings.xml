@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">san English</string>
+    <string name="xuanze">选择</string>
+    <string-array name="translation">
+        <item>英翻汉</item>
+        <item>汉翻英</item>
+    </string-array>
+</resources>
